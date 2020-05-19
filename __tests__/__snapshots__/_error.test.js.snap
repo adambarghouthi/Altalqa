@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorPage should show client error if statusCode undefined 1`] = `
+Object {
+  "instance": null,
+  "nodeType": "component",
+  "props": Object {},
+  "rendered": Object {
+    "instance": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": "An error occurred on client",
+    },
+    "rendered": Array [
+      "An error occurred on client",
+    ],
+    "type": "p",
+  },
+  "type": [Function],
+}
+`;
+
+exports[`ErrorPage should show server error if statusCode exists 1`] = `
+Object {
+  "instance": null,
+  "nodeType": "component",
+  "props": Object {
+    "statusCode": 500,
+  },
+  "rendered": Object {
+    "instance": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": "An error 500 occurred on server",
+    },
+    "rendered": Array [
+      "An error 500 occurred on server",
+    ],
+    "type": "p",
+  },
+  "type": [Function],
+}
+`;
